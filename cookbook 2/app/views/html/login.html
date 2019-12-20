@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Login Page</title>
+  <link href = "../styles/pages/login.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body> 
+  <!-- Site navigation menu -->
+  <nav class="navigation">
+      <ul>
+       <li>
+           <a href="../html/index.html">Home</a>
+      </li>
+       <li class="submenu">
+           <a href="#" class="dropbtn"> Recipe Types</a>
+         <div class="dropdown-content">
+           <a href="../html/a&s.html"><span>&raquo;</span>                Appertizers & Snacks</a>
+           <a href="../html/breakfast.html"><span>&raquo;                  </span> Breakfast & Brunch</a>
+           <a href="../html/dessert.html"><span>&raquo;                    </span> Desserts</a>
+           <a href="../html/dinner.html"><span>&raquo;</span>              Dinner</a>
+           <a href="../html/drinks.html"><span>&raquo;</span>              Drinks</a>
+          </div>
+        <li>
+           <a href="../html/aboutus.html">About us</a>
+        </li>
+        <li>
+           <a href="../html/login.html">Login</a>
+        </li>
+       </ul>
+  </nav>
+<form action="/action_page.php" method="post" target="_self">
+<div class="container" style="background-color: #0099ff">
+  <h2>Log In</h2>
+  <div id="LoginSuccesful"></div>
+
+  <label for="usr"><b>Username</b></label>
+    <input type="text" placeholder="Username" id="usr" required>
+
+  <label for="pword"><b>Password</b></label>
+      <input type="password" placeholder="Password" id="pword" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" name="remember">Remember Me
+    </label>
+  </div>
+</form>
+</body>
+</html>
